@@ -8,7 +8,10 @@
     <h1>Hello</h1>
 
     <script type="text/javascript">
-      console.log(window.location);
+      var href = window.location.href;
+      href = href + 'dist/';
+      window.location.href = href;
+      console.log(href);
     </script>;
 
   </body>
