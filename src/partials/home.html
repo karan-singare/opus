@@ -1,0 +1,166 @@
+<div class="home-page-block home__opus-is">
+    <div class="opus-is__title">
+        <img style="width: 121px; height: 152px; margin-bottom: 20px;" src="Opus-Logo-2019-121px.png" alt="opus"> <span style="position: relative; top: -4px; margin: 10px;">is</span>
+
+        <ul class="opus-is__list">
+            <li class="opus-is__item-1 opus-is__item--active">
+                <a href="">
+                    Commercial Construction
+                </a>
+            </li>
+            <li class="opus-is__item-2">
+                <a href="">
+                    Residential Construction
+                </a>
+            </li>
+            <li class="opus-is__item-3">
+                <a href="">
+                    Landscaping Design
+                </a>
+            </li>
+            <li class="opus-is__item-4">
+                <a href="">
+                    Architecture
+                </a>
+            </li>
+            <li class="opus-is__item-5">
+                <a href="">
+                    The Industry Leader
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="opus-is__text">
+        Opus One Design Build is an industry leader whose success and attention to detail has generated an unparalleled reputation as "The Construction Company That Consistently Outperforms The Competition". Delivering unwavering quality to our clients time and again, year after year, for nearly a decade. "Exceeding Your Expectations by Managing Them - Opus One Design Build - Follow The Leader".
+    </div>
+
+    <ul class="opus-services-list hidden-xs">
+        <li class="opus-services-list__residential-construction">
+            <a href="">
+                Residential Construction<br>
+                &amp;<br>
+                Renovation
+            </a>
+        </li>
+
+        <li class="opus-services-list__commercial-construction">
+            <a href="">
+                Commercial Construction<br>
+                &amp;<br>
+                Renovation
+            </a>
+        </li>
+
+        <li class="opus-services-list__landscaping">
+            <a href="">
+                Landscaping Design<br>
+                &amp;<br>
+                Pool and Spa
+            </a>
+        </li>
+
+        <li class="opus-services-list__architecture-interior-design">
+            <a href="">
+                Architecture<br>
+                &amp;<br>
+                Interior Design
+            </a>
+        </li>
+    </ul>
+</div><!-- .home__opus-is -->
+
+<div class="home-page-block home__residental-renovation">
+    <h1 class="home-page-block__header">
+        Residential Construction<br>
+        &amp;<br>
+        Renovation
+    </h1>
+
+    <div class="home-page-block__text">
+        <p>
+            We are Residential Home Builders, Remodelers, Renovation and Construction Experts <br>with the experience and talent required to bring your projects to completion, on time and on budget.<br> Let Opus One Design Build bring you home.
+
+        </p>
+    </div>
+
+    <a class="btn btn-default btn-learn-more" href="">
+        Learn More
+    </a>
+</div><!-- .home__residental-renovation -->
+
+<div class="home-page-block home__construction-renovation">
+    <h1 class="home-page-block__header">
+        Commercial Construction<br>
+        &amp;<br>
+        Renovation
+    </h1>
+
+    <div class="home-page-block__text">
+        <p>
+            North &amp; South America's Commercial, Institutional and Industrial Construction Industry Leader for nearly a decade.<br>
+            "Building Your Business On Time &amp; On Budget"
+        </p>
+    </div>
+
+    <a class="btn btn-default btn-learn-more" href="">
+        Learn More
+    </a>
+</div><!-- .home__construction-renovation -->
+
+<div class="home-page-block home__interior-design">
+    <h1 class="home-page-block__header">
+        Architecture<br>
+        &amp;<br>
+        Interior Design
+    </h1>
+
+    <div class="home-page-block__text">
+        <p>
+            Our Award Winning Interior Design &amp; Architecture team is ready to exceed your design expectations.<br> If you can dream it, we'll bring it to life. And, if you can't, let us dream for you.
+        </p>
+    </div>
+
+    <a class="btn btn-default btn-learn-more" href="">
+        Learn More
+    </a>
+</div><!-- .home__interior-design -->
+
+<div class="home-page-block home__pool-spa">
+    <h1 class="home-page-block__header">
+        Landscaping Design<br>
+        &amp;<br>
+        Pool and Spa
+    </h1>
+
+    <div class="home-page-block__text">
+        <p>
+            Our landscaping design philosophy is centered around creating<br>breathtaking
+            outdoor spaces and solutions for clients.<br> See our hardscape, softscape, pool and spa masterworks here.
+        </p>
+    </div>
+
+    <a class="btn btn-default btn-learn-more" href="">
+        Learn More
+    </a>
+</div><!-- .home__pool-spa -->
+
+<script>
+    jQuery(document).ready(onReadyHandler);
+
+    function onReadyHandler() {
+        setInterval(swapActive, 1500)
+    }
+
+    function swapActive() {
+        var $activeItem = jQuery('.opus-is__item--active'),
+            $nextActive = $activeItem.next('li');
+
+        if (!$nextActive.length) {
+            $nextActive = jQuery('.opus-is__item-1');
+        }
+
+        $activeItem.removeClass('opus-is__item--active');
+        $nextActive.addClass('opus-is__item--active');
+    }
+</script>

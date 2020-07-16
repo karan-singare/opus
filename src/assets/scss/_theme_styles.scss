@@ -1,0 +1,1962 @@
+/*
+Theme Name: Opus
+Author: Content Cloud Marketing
+Author URI: http://contentcloudmarketing.com/
+Version: 1.0
+*/
+/* common */
+/* windows phone ie bootstrap fix */
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*
+All body fonts = Raleway 400
+H1 = Raleway Black 900
+H2 = Italianno 400
+H3 = Syncopate 400
+H4 = Montserrat Bold 700
+*/
+
+body {
+  margin-bottom: 32px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 400;
+}
+@media (max-width: 767px) {
+  body {
+    margin-bottom: 1350px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    margin-bottom: 978px;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    margin-bottom: 584px;
+  }
+}
+
+/*h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: "Raleway", cursive;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}*/
+
+.img-responsive {
+  width: auto;
+}
+
+.text-green {
+  color: #9bb63b;
+}
+
+.text-white {
+  color: #fff;
+}
+
+a {
+  color: #9bb63b;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+  color: #3f9c2d;
+}
+
+.btn-block {
+  display: block;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-bar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #060606;
+}
+
+.top-bar__social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 19px;
+}
+.top-bar__social-links li {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: top;
+}
+
+.social__facebook,
+.social__twitter,
+.social__pinterest,
+.social__insta {
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background-size: 20px 19px;
+  background-repeat: no-repeat;
+}
+
+.social__facebook {
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/icon-facebook.svg);
+}
+
+.social__twitter {
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/icon-twitter.svg);
+}
+
+.social__pinterest {
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/icon-pinterest.svg);
+}
+
+.social__insta {
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/icon-insta.svg);
+}
+
+.navbar-default {
+  border-bottom: 4px solid #9bb63b;
+}
+.navbar-default .navbar-brand {
+  color: #9bb63b;
+  font-size: 60px;
+  font-weight: 900;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #9bb63b;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-nav li a {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-nav li a {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+}
+
+.dropdown-menu li a {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #fff;
+  background-color: #9bb63b;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 70px;
+  }
+
+  .navbar-default .navbar-toggle {
+    margin-top: 13px;
+    margin-bottom: 8px;
+    padding-right: 7px;
+    padding-left: 7px;
+  }
+  .navbar-default .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:focus {
+    background-color: #9bb63b;
+  }
+  .navbar-default .navbar-toggle:hover .icon-bar,
+  .navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #9bb63b;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    width: 28px;
+    height: 3px;
+  }
+  .navbar-default .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+
+  .navbar-brand {
+    height: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-bottom: 15px;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #9bb63b;
+  }
+}
+.navbar-brand {
+  display: inline-block;
+  width: 173px;
+  height: 90px;
+  padding: 20px 0;
+}
+@media (max-width: 767px) {
+  .navbar-brand {
+    height: 50px;
+    margin-top: 11px;
+    margin-left: 15px;
+    padding: 0;
+  }
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #9bb63b;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #9bb63b;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #fff;
+}
+
+.home-page-block {
+  height: 547px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.home-page-block + .home-page-block {
+  margin-top: 4px;
+}
+@media (max-width: 767px) {
+  .home-page-block {
+    height: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 991px) {
+  .home-page-block {
+    padding-top: 75px;
+  }
+}
+@media (min-width: 992px) {
+  .home-page-block {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .home-page-block {
+    padding-top: 125px;
+  }
+}
+
+.home__opus-is {
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/opus-is.jpg);
+}
+@media (max-width: 767px) {
+  .home__opus-is {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+  }
+}
+
+.home__construction-renovation {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/renovation-bg.jpg);
+}
+
+.home__residental-renovation {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/residental-bg.jpg);
+}
+
+.home__interior-design {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/interior-design-bg.jpg);
+}
+
+.home__pool-spa {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/pool-spa-bg.jpg);
+}
+
+.home-page-block__header {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+}
+@media (max-width: 767px) {
+  .home-page-block__header {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+.home-page-block__text {
+  margin-bottom: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-width: 767px) {
+  .home-page-block__text {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.btn-learn-more {
+  padding: 15px 25px;
+  font-size: 20px;
+}
+
+.opus-is__text,
+.opus-services-list {
+  max-width: 656px;
+}
+
+.opus-services-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.opus-services-list li {
+  display: inline-block;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .opus-services-list li:hover {
+    position: relative;
+  }
+  .opus-services-list li:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .opus-services-list li:hover a {
+    position: relative;
+    z-index: 2;
+  }
+}
+.opus-services-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
+}
+.opus-services-list a:hover,
+.opus-services-list a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .opus-services-list li {
+    width: 270px;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .opus-services-list li {
+    width: 320px;
+  }
+}
+
+.opus-services-list__residential-construction,
+.opus-services-list__commercial-construction,
+.opus-services-list__landscaping,
+.opus-services-list__architecture-interior-design {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.opus-services-list__residential-construction {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/item-1.png);
+}
+
+.opus-services-list__commercial-construction {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/item-2.png);
+}
+
+.opus-services-list__landscaping {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/item-3.png);
+}
+
+.opus-services-list__architecture-interior-design {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/03/item-4.png);
+}
+
+.opus-is__text {
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  font-size: 18px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .opus-is__text {
+    font-size: 16px;
+  }
+}
+
+.opus-is__title {
+  color: #fff;
+  font-size: 50px;
+  height: 150px;
+  line-height: 85px;
+  margin: 10px;
+}
+.opus-is__title strong {
+  color: #9bb63b;
+  font-size: 70px;
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  .opus-is__title {
+    height: auto;
+  }
+}
+
+.opus-is__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  top: 5px;
+  display: inline-block;
+  width: 330px;
+  height: 50px;
+}
+.opus-is__list li {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 330px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  background-color: #9ab63a;
+  transition: all 0.2s;
+}
+.opus-is__list .opus-is__item--active {
+  z-index: 2;
+}
+.opus-is__list a {
+  display: block;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  font-size: 24px;
+}
+.opus-is__list a:hover,
+.opus-is__list a:focus {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .opus-is__list {
+    top: -5px;
+    width: 100%;
+  }
+  .opus-is__list li {
+    width: 100%;
+  }
+  .opus-is__list a {
+    font-size: 20px;
+  }
+}
+
+.opus-is__list:hover li {
+  z-index: 3;
+}
+.opus-is__list:hover .opus-is__item-1 {
+  top: -96px;
+  -webkit-transform: perspective(100px) rotateX(10deg);
+  transform: perspective(100px) rotateX(10deg);
+}
+.opus-is__list:hover .opus-is__item-2 {
+  top: -44px;
+  -webkit-transform: perspective(100px) rotateX(-10deg);
+  transform: perspective(100px) rotateX(-10deg);
+}
+.opus-is__list:hover .opus-is__item-3 {
+  top: 4px;
+  -webkit-transform: perspective(100px) rotateX(10deg);
+  transform: perspective(100px) rotateX(10deg);
+}
+.opus-is__list:hover .opus-is__item-4 {
+  top: 56px;
+  -webkit-transform: perspective(100px) rotateX(-10deg);
+  transform: perspective(100px) rotateX(-10deg);
+}
+.opus-is__list:hover .opus-is__item-5 {
+  top: 102px;
+  -webkit-transform: perspective(200px) rotateX(20deg);
+  transform: perspective(200px) rotateX(20deg);
+}
+
+.text-container {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.text-container img {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .text-container {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+}
+
+.block-with-shadow {
+  position: relative;
+  max-width: 351px;
+}
+.block-with-shadow + .block-with-shadow {
+  margin-top: 50px;
+}
+.block-with-shadow:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -18px;
+  left: 0;
+  height: 18px;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/shadow-after-testimonial.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonial-block {
+  max-width: 351px;
+  height: 264px;
+  padding: 20px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/04/testimonials-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+.testimonial-block .btn {
+  font-weight: 400;
+}
+
+.testimonial-block__text {
+  margin-bottom: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form {
+  font-size: 16px;
+  background-color: #d8d8d8;
+  border: 1px solid #c8c8c8;
+  border-radius: 6px;
+}
+.contact-form label {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.contact-form .form-control {
+  font-size: 16px;
+}
+.contact-form .ajax-loader {
+  display: none;
+}
+.contact-form .wpcf7-submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .contact-form {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-form {
+    margin-top: 75px;
+  }
+}
+
+.contact-form__header {
+  padding: 15px 10px;
+  border-bottom: 1px solid #c8c8c8;
+  color: #1a191f;
+  font-size: 27px;
+  text-align: center;
+}
+
+.contact-form__body {
+  padding: 25px 20px;
+}
+
+.contact-from__privacy {
+  height: 21px;
+  padding-left: 23px;
+  color: #6f6e6e;
+  line-height: 21px;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/locker.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.testimonial-block,
+.contact-form,
+div.wpcf7-response-output,
+.block-with-shadow {
+  max-width: 351px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.carousel-indicators .active,
+.carousel-indicators li {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  border: 1px solid #bbbbbb;
+}
+.carousel-indicators li {
+  background-color: #1a191f;
+}
+.carousel-indicators .active {
+  background-color: #9bb63b;
+}
+@media (min-width: 768px) {
+  .carousel-indicators {
+    bottom: 5px;
+  }
+}
+@media (max-width: 991px) {
+  .carousel-indicators .active,
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.carousel-slider .item {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .carousel-slider .item {
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .carousel-slider .item {
+    height: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-slider .item {
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-slider .item {
+    height: 550px;
+  }
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  opacity: 1;
+  background: none;
+  text-align: left;
+}
+.carousel-control.left:hover,
+.carousel-control.left:focus,
+.carousel-control.right:hover,
+.carousel-control.right:focus {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .carousel-control.left,
+  .carousel-control.right {
+    width: 10%;
+  }
+}
+
+.control-arrow-right,
+.control-arrow-left {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  margin-top: -35px;
+  width: 50px;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-arrow-right {
+  left: 0;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/arrow-right.png);
+}
+
+.control-arrow-left {
+  right: 0;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/arrow-left.png);
+}
+
+.carousel-info {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  top: 50%;
+  margin-top: -160px;
+  max-width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .carousel-info {
+    margin-top: -98px;
+  }
+}
+
+.carousel-info--commercial-construction {
+  max-width: 600px;
+}
+
+.carousel-info--our-mission {
+  max-width: 500px;
+  margin-top: -87px;
+}
+@media (max-width: 767px) {
+  .carousel-info--our-mission {
+    margin-top: -93px;
+  }
+  .carousel-info--our-mission .carousel-info__text {
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.carousel-info__title {
+  margin-bottom: 10px;
+  font-weight: 900;
+  line-height: 46px;
+}
+.carousel-info__title span {
+  font-size: 40px;
+}
+@media (max-width: 767px) {
+  .carousel-info__title {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .carousel-info__title span {
+    font-size: 26px;
+  }
+}
+
+.carousel-info__text {
+  font-size: 16px;
+}
+.carousel-info__text .btn-learn-more {
+  margin-top: 10px;
+  padding: 10px 15px;
+}
+
+.page-id-11 {
+  background-image: url(../img/contact-us.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 767px) {
+  .contact-us-content {
+    padding-top: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .contact-us-content {
+    padding-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us-content {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-us-content {
+    padding-top: 130px;
+  }
+}
+
+.contact-us__title,
+.contact-us__text {
+  color: #fff;
+}
+
+.contact-us__title {
+  font-weight: 400;
+}
+
+.contact-us__text p {
+  margin-bottom: 20px;
+}
+
+.contact-us__benefits-list {
+  font-weight: 700;
+}
+.contact-us__benefits-list li {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 767px) {
+  .contact-us__arrow {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .contact-us__arrow {
+    float: right;
+    margin-top: 25px;
+  }
+}
+
+.contact-us-content .contact-form {
+  margin-top: 0;
+  color: #1a191f;
+}
+.contact-us-content .wpcf7-response-output {
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .contact-us-content .contact-form {
+    margin-top: 35px;
+  }
+}
+
+.contact-us__testimonials {
+  margin-top: 100px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-us__testimonials-header {
+  font-size: 24px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .testimonial-item {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .testimonial-item {
+    max-width: 300px;
+  }
+
+  .testimonial-item-holder:nth-child(1) .testimonial-item {
+    float: left;
+  }
+  .testimonial-item-holder:nth-child(2) .testimonial-item {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .testimonial-item-holder:nth-child(3) .testimonial-item {
+    float: right;
+  }
+}
+.page-id-87 {
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/04/thank-you-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.thank-you-content {
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .thank-you-content {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+}
+@media (min-width: 768px) {
+  .thank-you-content {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .thank-you-content {
+    padding-top: 150px;
+    padding-bottom: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .thank-you-content {
+    padding-top: 190px;
+    padding-bottom: 250px;
+  }
+}
+
+.thank-you__header {
+  margin-bottom: 10px;
+  font-size: 50px;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+}
+
+.thank-you__up-to {
+  font-weight: 700;
+  text-decoration: underline;
+}
+@media (max-width: 767px) {
+  .thank-you__up-to {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .thank-you__up-to {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .thank-you__up-to {
+    margin-top: 75px;
+  }
+}
+
+.thank-you__social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 35px;
+  margin-top: 5px;
+}
+.thank-you__social-links li {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.thank-you__social-links .social__facebook,
+.thank-you__social-links .social__twitter,
+.thank-you__social-links .social__insta,
+.thank-you__social-links .social__pinterest {
+  width: 35px;
+  height: 35px;
+  background-size: 35px 35px;
+}
+
+.subpage-container {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.blog-overview {
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+@media (max-width: 767px) {
+  .blog-overview {
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+}
+
+.blog-post {
+  position: relative;
+  min-height: 60px;
+  margin-bottom: 30px;
+
+  /**
+   * @author Karan Singh Singare
+   */
+   img {
+     width: 100%;
+     height: auto;
+   }
+
+}
+
+.blog-post__title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 750px;
+  height: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  font-size: 30px;
+  line-height: 60px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 767px) {
+  .blog-post__title {
+    height: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .blog-post__title {
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .blog-post__title {
+    height: 50px;
+    font-size: 26px;
+    line-height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog-post__title {
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
+.blog__pagination {
+  margin-top: 50px;
+}
+.blog__pagination .next,
+.blog__pagination .prev {
+  position: relative;
+  color: #9bb63b;
+}
+.blog__pagination .next:after,
+.blog__pagination .prev:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/prev-next.png);
+  background-repeat: no-repeat;
+}
+.blog__pagination .prev {
+  padding-left: 25px;
+}
+.blog__pagination .prev:before {
+  left: 0;
+}
+.blog__pagination .next {
+  padding-right: 25px;
+}
+.blog__pagination .next:after {
+  right: 0;
+  background-position: -15px 0;
+}
+.blog__pagination .current {
+  text-decoration: underline;
+}
+.blog__pagination .page-numbers {
+  margin-right: 5px;
+}
+.blog__pagination .page-numbers:last-child {
+  margin-right: 0;
+}
+.blog__pagination .screen-reader-text {
+  display: none;
+}
+.blog__pagination a {
+  display: inline-block;
+  color: #1a191f;
+}
+@media (max-width: 991px) {
+  .blog__pagination {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.blog-join-us {
+  padding: 14px 20px;
+  background-color: #2f3136;
+  border: 1px solid #000;
+  border-radius: 8px;
+  color: #fff;
+}
+.blog-join-us .join-design-news-form {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+}
+.blog-join-us .contact-from__privacy {
+  height: auto;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  .blog-join-us {
+    margin-top: 50px;
+  }
+}
+
+.blog-join-us__title {
+  margin-bottom: 25px;
+  padding-left: 64px;
+  font-size: 25px;
+  font-weight: 700;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/mail-icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.categories-search-block {
+  height: 150px;
+  padding-top: 35px;
+  padding-left: 25px;
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2016/04/search-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  overflow: hidden;
+}
+
+.search-form-input {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  border: 1px solid #717170;
+  color: #272727;
+}
+
+.search-form-submit {
+  display: inline-block;
+  vertical-align: top;
+  width: 54px;
+  height: 32px;
+  position: relative;
+  top: 2px;
+  background: none;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/search-btn.png);
+  background-repeat: no-repeat;
+  border: 0;
+}
+
+.categories__title {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
+}
+
+.categories__search {
+  margin-bottom: 3px;
+  padding-left: 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.6);
+}
+
+.subpage__title {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-top: -22px;
+  margin-bottom: 0;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .subpage__title {
+    position: static;
+    margin-top: 0;
+  }
+}
+
+.single-post__featured-image,
+.subpage__featured-image {
+  position: relative;
+  height: 550px;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .single-post__featured-image,
+  .subpage__featured-image {
+    position: static;
+    height: auto;
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .single-post__featured-image,
+  .subpage__featured-image {
+    height: 450px;
+  }
+}
+@media (min-width: 992px) {
+  .single-post__featured-image,
+  .subpage__featured-image {
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .single-post__featured-image,
+  .subpage__featured-image {
+    height: 550px;
+  }
+}
+
+.single-post__header-text {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-top: -85px;
+  padding-right: 25px;
+  padding-left: 25px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .single-post__header-text {
+    position: static;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  /* testimonials page with award */
+  .page-id-7 .single-post__header-text {
+    margin-top: -120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-post__title,
+  .single-post__description {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.single-post__title {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: -1px -1px 25px black;
+}
+@media (max-width: 767px) {
+  .single-post__title {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+@media (min-width: 768px) {
+  .single-post__title {
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .single-post__title {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .single-post__title {
+    max-width: 1000px;
+  }
+}
+
+.single-post__description {
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 1.2;
+  text-shadow: -1px -1px 25px black;
+}
+
+.search-categories {
+  padding: 30px 25px;
+  background-color: #e7e7e7;
+  border: 1px solid #dddddd;
+  border-top: 2px solid #c8c8c8;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.search-categories .widgettitle {
+  display: none;
+}
+.search-categories ul {
+  margin: 0;
+  padding: 0 0 0 25px;
+}
+.search-categories li {
+  margin-bottom: 10px;
+}
+.search-categories li:last-child {
+  margin-bottom: 0;
+}
+.search-categories a {
+  color: #353342;
+  font-size: 18px;
+  font-weight: 700;
+}
+.search-categories a:hover,
+.search-categories a:focus {
+  color: #1e1d25;
+}
+
+.post-nav-box a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.post-nav-box__title {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 360px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* truncate */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.back-to-blog {
+  margin-top: 25px;
+}
+
+.back-to-blog__link {
+  position: relative;
+  display: block;
+  height: 20px;
+  padding-left: 20px;
+  color: #9bb63b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.back-to-blog__link:hover,
+.back-to-blog__link:focus {
+  text-decoration: none;
+}
+.back-to-blog__link:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/prev-next.png);
+  background-repeat: no-repeat;
+}
+
+.blog-navigation {
+  margin-top: 75px;
+}
+@media (max-width: 767px) {
+  .blog-navigation {
+    margin-top: 50px;
+  }
+}
+
+.blog-navigation__header {
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.floating-panel {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1001;
+  height: 45px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #2c2a34;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+.floating-panel .addthis_native_toolbox {
+  margin-right: auto;
+  margin-left: auto;
+  height: 20px;
+  text-align: center;
+}
+.floating-panel .addthis_native_toolbox .at-share-tbx-element {
+  height: 20px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .floating-panel .addthis_native_toolbox {
+    width: 285px;
+  }
+}
+@media (min-width: 768px) {
+  .floating-panel .addthis_native_toolbox {
+    position: relative;
+    padding-left: 110px;
+    width: 395px;
+  }
+  .floating-panel .addthis_native_toolbox:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 20px;
+    padding-left: 12px;
+    content: 'Share this';
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+  }
+  .floating-panel .addthis_native_toolbox:after {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    width: 44px;
+    height: 15px;
+    content: '';
+    display: block;
+    background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/share-arrow.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+.single-review + .single-review {
+  margin-top: 40px;
+}
+
+.single-review__verified {
+  margin-bottom: 15px;
+  padding-left: 185px;
+  color: #9bb63b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/testimonial-stars.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.single-review__title {
+  margin-bottom: 5px;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.single-review__text {
+  margin-bottom: 10px;
+}
+
+.single-review__author {
+  text-align: right;
+  font-style: italic;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-top {
+  padding-top: 60px;
+  background-color: #1a191f;
+}
+@media (max-width: 767px) {
+  .footer-top {
+    padding-top: 10px;
+  }
+}
+
+.footer-top__social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 38px;
+}
+.footer-top__social-links li {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-top__social-links .social__facebook,
+.footer-top__social-links .social__twitter,
+.footer-top__social-links .social__pinterest,
+.footer-top__social-links .social__insta {
+  width: 39px;
+  height: 38px;
+  background-size: 39px 38px;
+}
+.footer-top__social-links .social__facebook,
+.footer-top__social-links .social__twitter,
+.footer-top__social-links .social__insta {
+  margin-right: 8px;
+}
+
+.signup-newsletters {
+  min-height: 61px;
+  margin-bottom: 10px;
+  padding-left: 64px;
+  background-image: url(/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/themes/opus/src/assets/img/mail-icon.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+@media (min-width: 1200px) {
+  .signup-newsletters {
+    padding-top: 22px;
+  }
+}
+
+.join-design-news-form {
+  padding: 14px 20px;
+  background-color: #2f3136;
+  border-radius: 8px;
+}
+.join-design-news-form label {
+  padding-left: 10px;
+}
+.join-design-news-form .form-group {
+  margin-bottom: 10px;
+}
+.join-design-news-form .form-control {
+  background-color: #d0d0d0;
+  border: 1px solid #fff;
+}
+.join-design-news-form .wpcf7-submit {
+  margin-top: 15px;
+}
+
+.ajax-loader {
+  display: none;
+}
+
+div.wpcf7-response-output {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+span.wpcf7-not-valid-tip {
+  padding-top: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-top__title {
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 4px solid #9bb63b;
+}
+@media (max-width: 767px) {
+  .footer-top__title {
+    margin-top: 25px;
+  }
+}
+
+.footer-top__title--get-social {
+  margin-top: 25px;
+}
+
+@media (max-width: 991px) {
+  .footer-top__title--join {
+    margin-top: 25px;
+  }
+}
+
+.footer-top__about-opus {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  color: #636161;
+  border-top: 1px solid #636161;
+}
+
+.footer-bottom {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #060606;
+}
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .footer-bottom__company {
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom__agency img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 768px) {
+  .footer-bottom__company,
+  .footer-bottom__agency {
+    line-height: 44px;
+  }
+
+  .footer-bottom__company {
+    float: left;
+  }
+
+  .footer-bottom__agency {
+    float: right;
+  }
+}
+.recent-posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.recent-posts a {
+  color: #fff;
+}
+.recent-posts a:hover,
+.recent-posts a:focus {
+  text-decoration: none;
+}
+.recent-posts li + li {
+  margin-top: 10px;
+}
+
+.recent-posts__header {
+  margin-top: 5px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.recent-posts__description {
+  font-size: 16px;
+}
+
+residential-const.page-template-tpl-ruction .carousel-info__title,
+.page-template-tpl-residential-construction h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.page-template-tpl-residential-construction .carousel-info__title {
+  font-size: 40px;
+}
+
+.page-template-tpl-residential-construction h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 33px;
+  line-height: 1;
+}
+
+.single-format-standard .single-post__title,
+.single-format-standard h1,
+.contact-us__title,
+.page-template-tpl-regular-subpage .single-post__title,
+.page-template-tpl-our-mission .carousel-info__title,
+.page-template-tpl-our-mission h1,
+.page-template-tpl-commercial-construction .carousel-info__title,
+.page-template-tpl-commercial-construction h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.page-template-tpl-regular-subpage .single-post__title,
+.page-template-tpl-commercial-construction .carousel-info__title,
+.page-template-tpl-our-mission .carousel-info__title,
+.single-format-standard .single-post__title {
+  font-size: 40px;
+}
+
+.page-template-tpl-commercial-construction h1,
+.page-template-tpl-our-mission h1,
+.single-format-standard h1 {
+  font-size: 33px;
+}
+
+.page-template-tpl-architecture-interior-design .carousel-info__title,
+.page-template-tpl-architecture-interior-design h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.page-template-tpl-architecture-interior-design .carousel-info__title {
+  font-size: 40px;
+}
+
+.page-template-tpl-architecture-interior-design h1 {
+  font-size: 29px;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.page-template-tpl-landscaping .carousel-info__title,
+.page-template-tpl-landscaping h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.page-template-tpl-landscaping .carousel-info__title {
+  font-size: 40px;
+}
+
+.page-template-tpl-landscaping h1 {
+  font-size: 29px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.font-raleway-black {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.awards {
+  text-align: center;
+}
+
+.awards--contact {
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .awards--contact {
+    margin-top: 25px;
+  }
+}
+
+.awards--testimonials {
+  margin-top: 35px;
+}
+
+.awards--footer {
+  margin-top: 25px;
+}
+
+.awards img {
+  display: inline-block;
+  max-width: 85px;
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.awards .award__top-pro {
+  max-width: 97px;
+}
+@media (max-width: 767px) {
+  .awards img {
+    max-width: 55px;
+  }
+
+  .awards .award__top-pro {
+    max-width: 67px;
+  }
+}
+
+.awards--footer img {
+  max-width: 55px;
+}
+
+.awards--footer .award__top-pro {
+  max-width: 67px;
+}
+
+.testimonial-block--commercial {
+  color: #fff;
+  text-align: left;
+  background-image: url(https://web.archive.org/web/20190923105234im_/http://www.opusonedesignbuild.com/wp-content/uploads/2018/08/sidebar-list.png);
+}
+@media (min-width: 768px) {
+  .testimonial-block--commercial {
+    padding-top: 25px;
+  }
+}
+
+.testimonial-block--commercial li {
+  margin-bottom: 7.5px;
+}
+
+.testimonial-block--commercial li:last-child {
+  margin-bottom: 0;
+}
+
+.btn-default {
+  background-color: #9bb63b;
+  border-color: #9bb63b;
+}
+
+/*
+     FILE ARCHIVED ON 10:52:34 Sep 23, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:20:52 Jul 14, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.263
+  exclusion.robots.policy: 0.247
+  CDXLines.iter: 15.86 (3)
+  PetaboxLoader3.datanode: 71.381 (4)
+  PetaboxLoader3.resolve: 202.387 (3)
+  RedisCDXSource: 48.742
+  LoadShardBlock: 1273.0 (3)
+  captures_list: 1341.629
+  load_resource: 177.433
+  esindex: 0.012
+*/
